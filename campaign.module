@@ -948,8 +948,7 @@ function campaign_mplookup($postalCode) {
 	 // postal code lookup page on parl.gc.ca
 	 $url = 'http://www2.parl.gc.ca/parlinfo/compilations/houseofcommons/memberbypostalcode.aspx';
  
-	 // generate firefox headers to site can properly detect
-	 // this is a compatible browser
+	 // generate firefox headers so site can properly detect curl as a compatible browser
 	 $ch = curl_init();
 	 $header = array();
 	 $header[0] = "Accept: text/xml,application/xml,application/xhtml+xml,";
